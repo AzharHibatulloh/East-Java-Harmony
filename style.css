@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@300;400&display=swap');
+
+#root{
+    --fontTitle: "Great Vibes";
+    --fontText: "Inter";
+}
+
+body{
+    background-color: #000;
+    margin: 0;
+    color: #fff;
+}
+
+.first-page{
+    position: relative;
+    /* border: 2px solid white; */
+}
+
+.first-page video{
+    /* opacity: 0.4; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    filter: brightness(40%);
+}
+
+.overlay{
+    background-image: linear-gradient(rgb(0,0,0,0), rgb(14, 14, 14));
+    height: 100%; 
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: 2; 
+    mix-blend-mode: color;
+}
+
+.first-page .logo{
+    z-index: 999;
+    width: 15vw;
+    height: inherit;
+    position: absolute;
+    top: 34px; 
+    left: 45%;
+}
+
+.first-page .title{
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 8vw;
+    z-index: 999;
+    position: absolute;
+    top: 10vh;
+    left: 20vw;
+}
+
+.quote{
+    font-family: "inter", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    /* border: 2px solid white; */
+    justify-content: center;
+    align-items: center;
+    padding: 10vw;
+}
+
+.lang {
+    display: flex;
+    height: 60vw;
+    /* border: 2px solid wheat; */
+}
+
+.lang img {
+    width: 50vw;
+    height: 250px;
+    opacity: 60%;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.isi{
+    margin-left: -10px;
+}
+
+.isi .subtitle{
+    font-family: "Great Vibes", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+.suara {
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    margin-left: 20px; /* Adjust margin as needed */
+    flex: 5;
+    gap: 8px;
+}
+
+.java,
+.madura,
+.osing,
+.tengger,
+.kangean {
+    background-color: #fff;
+    text-align: center;
+    color: #110168;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 2.5vw;
+}
+
+.play {
+    background-color: #fff;
+    color: #000;
+    width: 3vw;
+    text-align: center;
+    padding: 2vw;
+    font-size: 20px;
+    border-radius: 50%;
+    margin-top: 10px;
+    border: #ffffff00;
+    display: inline-block;
+}
+
+.play:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.house{
+    position: relative;
+    /* border: 2px solid wheat; */
+}
+
+.house img{
+    width: 96.5vw;
+    opacity: 60%;
+}
+
+.house .title{
+    font-family: 'Great Vibes', cursive;
+    color: #fff;
+    font-weight: 500;
+    font-size: 8vw;
+    z-index: 999;
+    position: absolute;
+    top: 5vh;
+    left: 10%;
+    text-shadow: 5px 5px 2px black;
+}
+
+.house .desc{
+
+    font-family: "inter", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2.4vw;
+    z-index: 999;
+    top: 27%;
+    left: 10%;
+    right: 20%;
+    margin: 20px;
+    padding: 5px;
+}
+
+.traditionalDress{
+    position: relative;
+    /* border: 2px solid white; */
+}
+
+#mainPhoto{
+    width: 96.5vw;
+    height: 700px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.mini{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 2px;
+    border-radius: 20px;
+    z-index: 999;
+    border: 2px solid black;
+    opacity: 1;
+}
+
+.satu{
+    position: absolute;
+    bottom: 40px;
+    right: 270px;
+}
+.dua{
+    position: absolute;
+    bottom: 40px;
+    right: 150px;
+}
+.tiga{
+    position: absolute;
+    bottom: 40px;
+    right: 32px;
+}
+
+.mini:hover{
+    border: 2px solid yellow;
+    opacity: 1;
+    transition: ease-out 0.3s;
+    transform: scale(1.1);
+}
+
+.caption-wrapper{
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    width: 700px;
+    transition: 0.3s;
+}
+
+.caption-wrapper #subtitle{
+    font-family: var(--fontText, sans-serif);
+    font-weight: 800;
+    font-size: 40px;   
+}
+
+.caption-wrapper #desc{
+    background-color: #615e5e8e;
+    font-family: var(--fontText, sans-serif);
+    font-weight: 10;
+    font-size: 20px;
+    width: 600px;   
+}
+
+.traditionalDress .sub-title{
+    font-family: "inter", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2vw;
+    z-index: 999;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-shadow: 5px 5px 2px black;
+}
+
+.sendratari{
+    position: relative;
+}
+
+#mainPhoto2{
+    width: 96.5vw;
+    height: 700px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.satu2{
+    position: absolute;
+    bottom: 40px;
+    right: 270px;
+}
+.dua2{
+    position: absolute;
+    bottom: 40px;
+    right: 150px;
+}
+.tiga2{
+    position: absolute;
+    bottom: 40px;
+    right: 32px;
+}
+
+.mini2:hover{
+    border: 2px solid yellow;
+    opacity: 1;
+    transition: ease-out 0.3s;
+    transform: scale(1.1);
+}
+
+.mini2{
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+    margin: 0 2px;
+    border-radius: 20px;
+    z-index: 999;
+    border: 2px solid black;
+    opacity: 1;
+}
+
+.caption-wrapper2{
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    width: 700px;
+    transition: 0.3s;
+}
+
+.caption-wrapper2 #subtitle2{
+    font-family: var(--fontText, sans-serif);
+    font-weight: 800;
+    font-size: 40px;   
+}
+
+.caption-wrapper2 #desc2{
+    background-color: #615e5e8e;
+    font-family: var(--fontText, sans-serif);
+    font-weight: 10;
+    font-size: 20px;
+    width: 600px;   
+}
+
+.sendratari .sub-title{
+    font-family: "inter", sans-serif;
+    color: #fff;
+    font-weight: 500;
+    font-size: 3vw;
+    z-index: 999;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    bottom: 5%;
+    left: 5%;
+    text-shadow: 5px 5px 2px black;
+}
+
+.event{
+    background-image: url(assets/picture/SAVE_20231218_125132_waifu2x_CUnet_16.0x_noise3_GPU.png);
+    background-repeat: no-repeat;
+    background-size: 96.5vw;
+    position: relative;
+    padding: 15px 50px;
+    /* border: 2px solid white; */
+}
+
+.event .title{
+    font-family: "Great Vibes", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: aliceblue;
+    text-shadow: 3px 3px 1px #000;
+    margin-bottom: 0;
+}
+
+.table{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 10px;
+    font-family: Arial;
+    color: #110168;
+    font-style: italic;
+    font-weight: 800;
+}
